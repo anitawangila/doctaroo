@@ -1,0 +1,1288 @@
+hr {
+    margin: 2px; }
+  
+  sub, sup {
+    color: #b5c3d8;
+    font-size: 0.3em; }
+  
+  .btn {
+    font-size: 0.8em; }
+    :root{
+      --header-height:3rem;
+      --nav-width:324px;
+      --font-medium:500;
+      --font-semi-bold:600;
+      --font-bold:700;
+      --first-color:#cc4b2c;
+      --first-color-dark:#662616;
+      --first-color-darken:#290f09;
+      --text-color:#54423d;
+      --first-color-light:#eae7e6;
+      --first-color-lighten:#fffafa;
+      --main-color:#eaa023;
+      --dark:#0c1023;
+      --body-font:"poppins",sans-serif;
+      --h1-font-size:1.5rem;
+      --h2-font-size:1.25rem;
+      --h3-font-size:1rem;
+      --normal-font-size:.938rem;
+      --small-font-size:.813rem;
+      --small-font-size:.75rem;
+      /*---margenes---*/
+      --mb-1:.5rem;
+      --mb-2:.1rem;
+      --mb-3:1.5rem;
+      --mb-4:2rem;
+      --mb-5:2.5rem;
+      --z-fixed:100;
+  }
+  @media screen and (man-width: 768px){
+  :root{
+      --h1-font-size:2.25rem;
+      --h2-font-size:1.5rem;
+      --h3-font-size:1.25rem;
+      --normal-font-size:1rem;
+      --small-font-size:.875rem;
+      --small-font-size:.813rem;
+  }
+  }
+  *,::before,
+  ::after{
+      box-sizing: border-box;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      margin: var(--header-height)0 0 0;
+      background-color: #F2F6FA;
+      color: #000;
+      line-height: 1.6;
+      font: normal normal 400 1em Source Sans Pro, San Serif;
+  }
+  
+  ul{
+      margin: 10px;
+      padding: 0;
+      list-style: none;
+  }
+  
+  
+  .bd-grid{
+      max-width: 1024px;
+      display: grid;
+      grid-template-columns: 100%;
+      column-gap: 2rem;
+      width: calc(100% -2rem);
+      margin-left: var(--mb-2);
+      margin-right: var(--mb-2);
+      margin-bottom: var(--mb-4);
+  }
+  i{
+      margin-right: 20px;
+      margin-left: 0;
+      color: #32435E;
+      
+  }
+  .I-header{
+      width: 100%;
+      position:fixed;
+      left: 0;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+      z-index: var(--z-fixed);
+      background-color: var(--first-color-lighten-green);
+  }
+  .nav{
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .nav__menu{
+      position: fixed;
+      top: 0px;
+      left:-100%;
+     width: 100%;
+      height: 100%;
+      padding: 3rem;
+      display: flex;
+      align-items: center;
+      transition: .5s;
+      background-color:#fff;
+  }
+  .active {
+  
+    color: #005DDD; 
+    }
+  
+  a {
+    color: #32435E;
+    text-decoration: none;
+   }
+  
+  .nav__link:hover {
+  
+    color: green; 
+  
+  }
+  
+  
+  .nav__close{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2rem;
+      color: var(--first-color-dark);
+      cursor: pointer;
+  }
+  .nav__item{
+      margin-bottom: var(--mb-1);
+      margin-left: 30px;
+      margin-top: 50px;
+  }
+  .nav__list{
+    margin-left: 0px;
+  }
+  .nav__link{
+      font-size: 1rem;
+      font-weight: var(--font-bold);
+      color: blue;
+     transition: .2s;  
+  }
+  
+  .logo-Section {
+   width: 150%;
+    height: 100px;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 20px 0px 0px 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: middle;
+     }
+  
+  .logo-wrapper {
+    margin: 0px;
+    width: fit-content;
+    height: fit-content; }
+  
+  .logo-wrapper #doctaroo_logo {
+      width: 170px; }
+  
+  .avatar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+   width: 285px;
+    height: 100px;
+    padding: 0px 0px 0px 40px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    align-items: left;
+    color: #32435E; }
+  
+  .user-details {
+      width: 200px; }
+  
+  .avatar.user-details #user-profile-img {
+        width: 63px;
+        height: 63px;
+        border: 1px solid azure;
+        border-radius: 100%;
+      margin-left: 0px; }
+  
+  .user-details .user-name {
+        font: normal normal bold 3rem Source Sans Pro, San Serif;
+        width: 200px;
+        margin: 0px;
+        font-size: 16px;
+        color: #32435E; }
+  
+  .user-details .user-title {
+        font: normal normal normal 0.8rem Source Sans Pro;
+        width: 200px;
+        margin: 0px;
+        color: #7F8FA8; }
+  
+  .nav__toggle{
+      color: var(--first-color-dark);
+      font-size: 1.3rem;
+      cursor: pointer;
+  }
+  .show{
+      left: 0;
+  }
+  
+  @media screen and (min-width: 768px){
+      .nav__menu{
+          width: 324px;
+      }
+     .heading-section .banner-wrapper .banner-top-content .banner-imageholder {
+      margin-top: -50px;
+      width: 200px;
+      margin-right: 10px; 
+      position:relative;
+      /*align-self: flex-end;*/
+      margin-bottom: 0px;
+text-align: center;
+
+     }
+     .heading-section .banner-wrapper {
+       width: 50%; }
+      }
+  
+  @media screen and (min-width: 1024px){
+      body{
+          padding-left: var(--nav-width);
+          margin: 0;
+      }
+      .I-header{
+          width: 0;
+      }
+      .nav__toggle, .nav__logo, .nav__close{
+          display: none;
+      }
+      .nav__menu{
+          left: 0;
+      }
+      .main{
+          height: 100%;
+          align-items: center;
+          padding: 30px 10px 5px 10px;
+          background-color: #F2F6FA;
+          overflow: hidden; 
+      }
+      .section{
+        padding: 4rem 0 2rem;
+    }
+      .bd-grid{
+          margin-left: auto;
+          margin-right: 0;
+      }
+  }
+  .main{
+    height: 100%;
+    align-items: center;
+    padding: 30px 10px 5px 10px;
+    background-color: #F2F6FA;
+    overflow: hidden; 
+}
+  
+ 
+
+
+  
+/*section area*/
+.heading-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin:0px; }
+  
+  .heading-section .page-heading {
+      color: #32435E;
+      letter-spacing: 0px;
+      min-width: fit-content; }
+  
+  .heading-section .page-heading .page-title {
+        padding-top: 40px;
+        font: normal normal 200 2.5rem Source Sans Pro;
+        margin-bottom: 10px; 
+     }
+  
+  .heading-section .page-heading .page-title-next {
+        font: normal normal bold 2.0rem Source Sans Pro;
+        margin-bottom: 5px;
+        
+      }
+  
+  .heading-section .page-heading .page-highlight-text {
+        font: normal normal normal 1rem Source Sans Pro; }
+  
+  .heading-section .banner-wrapper {
+      width: 50%; }
+  
+  .heading-section .banner-wrapper .banner-top-content {
+        background: transparent linear-gradient(282deg, #3497FD 0%, #3ACCE1 100%) 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        padding: 5px 0px 0px 10px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        margin-left: 2px;
+        margin-bottom: 10px;
+   }
+  
+   .heading-section .banner-wrapper .banner-top-content .text {
+          padding: 10px;
+          margin: 0px 10px;
+          color: #ffffff;
+          padding: 30px 0px; }
+  
+   .heading-section .banner-wrapper .banner-top-content .banner-top-main-text {
+          font: normal normal normal 0.9rem Source Sans Pro; }
+  
+   .heading-section .banner-wrapper .banner-top-content .banner-link {
+          font: normal normal bold 1rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #00276B; }
+  
+  .heading-section .banner-wrapper .banner-top-content .banner-imageholder {
+          margin-top: -50px;
+          width: 200px;
+          text-align: center;
+        margin-right: 60px;
+        margin-bottom: 0px; 
+      position:relative;}
+  
+  @media (max-width: 1200px) {
+            
+        .heading-section .banner-wrapper .banner-top-content .banner {
+         width: 100%;
+          position:relative;
+          align-self: flex-end;
+          margin-top: 50px;
+         } }
+  
+  .top-stripe {
+    position: static;
+    height: 5px;
+    overflow: hidden;
+    margin: -50px -80px 50px -80px; }
+  
+  .top-stripe .stripe-one {
+      width: 25%;
+      background-color: #005DDD; }
+  
+  .top-stripe .stripe-two {
+      width: 25%;
+      background-color: #5773FF; }
+  
+  .top-stripe .stripe-three {
+      width: 25%;
+      background-color: #3497FD; }
+  .top-stripe .stripe-four {
+      width: 25%;
+      background-color: #3ACCE1; }
+  
+  /*-------------dashcards---------*/
+  .dash-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   margin: 5px 5px;
+    padding-left: -5px;}
+    
+     
+  .dash-cards .dash-card {
+     height: 140px;
+     width: 100%;
+     min-width:200px ;
+     max-width: 280px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 5px;
+      padding: 20px 0px 20px 40px;
+      margin: 10px 0px;
+    grid-template-columns: 1fr max-content 1fr; }
+  
+  .dash-cards .dash-card .card-icon {
+        width: 20px;
+        height: 20px; }
+  
+  .dash-cards .dash-card .card-text .card-text-one {
+        font: normal normal bold 1.5rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #32435E;
+        opacity: 1;
+        margin-bottom: 3px; }
+  
+  .dash-cards .dash-card .card-text .card-text-two {
+        text-align: left;
+        font: normal normal 600 1rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #7F8FA8;
+        opacity: 1; }
+       
+    .dash-cards .total-consultations .c-icon {
+      margin: auto 15 auto 15;
+      background-color: #d4eaff;
+      text-align: center;
+      width: 23px;
+      height: 23px;
+      border-radius: 100%;
+      padding: 30px; }
+  
+    .dash-cards .total-consultations .c-icon i {
+        color: #3497FD;
+        font-size: 1.0rem;
+        margin-right: 20px;
+        text-align: center;
+       }
+  /*
+    .dash-cards .active-patients .c-icon {
+      margin: auto 15 auto 15;
+      background-color: #5873f941;
+      text-align: center;
+      width: 43px;
+      height: 53px;
+      border-radius: 50%;
+      padding: 15px; }
+  
+    .dash-cards .active-patients .c-icon i {
+        color: #5873F9;
+        font-size: 2.0rem; }
+  
+    .dash-cards .total-payments .c-icon {
+      margin: auto 15 auto 15;
+      background-color: #FFEBF6;
+      text-align: center;
+      width: 53px;
+      height: 53px;
+      border-radius: 100%;
+      padding: 15px; }
+  
+    .dash-cards .total-payments .c-icon i {
+        color: #ED3B5D;
+        font-size: 2.0rem; }
+  
+    .dash-cards .average-session .c-icon {
+      margin: auto 15 auto 15;
+      background-color: #83eeff71;
+      text-align: center;
+      width: 53px;
+      height: 53px;
+      border-radius: 100%;
+      padding: 15px; }
+  
+    .dash-cards .average-session .c-icon i {
+        color: #3ACCE1;
+        font-size: 2.0rem; }
+        /*---------dashcards ends-------*/
+  
+  .dash-consultations-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px 0px 0px 0px; }
+    
+  .dash-consultations-title .section-title {
+      text-align: left;
+      font: normal normal bold 1.2rem Source Sans Pro;
+      letter-spacing: 0px;
+      color: #32435E;
+      padding: 0px;
+      min-width: calc(fit-content+20px);
+    }
+      
+  .dash-consultations-title .button {
+      text-align: right;
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  /*---------------appointments--------*/
+  .dash-consultations {
+    display:flex;
+    flex-wrap: row wrap;
+    justify-content: flex-start;
+    padding: 10  0px;
+    overflow: hidden;
+    margin: 0px;
+  }
+    
+  .dash-consultations .next-consultation {
+      height: 345px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 5px;
+     padding: 0px 10px;
+      width: 23%;
+      min-width: 150px;
+      overflow: hidden; }
+      
+      
+    
+    @media (max-width: 992px) {
+        .dash-consultations .next-consultation {
+          margin-bottom: 20px; } }
+  
+  .dash-consultations .next-consultation .patient-profile {
+        width: 100%;
+        padding: 20px 0px;
+        margin: 5px 0px;
+        text-align: left; }
+  
+  .dash-consultations .next-consultation .patient-profile .patient {
+          width: 40px;
+          padding: 0;
+          margin-left: -10px; }
+          
+  .dash-consultations .next-consultation .patient-profile .user-details {
+          width: 50%;
+        margin-left: 20px;
+      margin-top: 5px; }
+  
+  .dash-consultations .next-consultation .patient-profile .user-details .user-title {
+            font-size: 0.6rem;
+            text-transform: uppercase; 
+          }
+            
+  .dash-consultations .next-consultation .patient-profile .call-button {
+          width: 40px;
+          height: 40px;
+          background: #1FB28F 0% 0% no-repeat padding-box;
+          border-radius: 100%;
+          padding: 2px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          text-align: center;
+          margin-top: 5px;
+          color: #fff;
+        margin-right: 20px; }
+    
+  .dash-consultations .next-consultation .patient-profile .call-button .call-btn {
+            font-size: 1rem;
+            color: inherint; }
+            
+  .dash-consultations .next-consultation .consultation-details {
+       margin: 5px 0px;
+        padding: 5px 0px; }
+        
+  .dash-consultations .next-consultation .consultation-details .detail-title {
+          text-align: left;
+          font: normal normal bold 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #7F8FA8;
+          text-transform: uppercase;
+          margin: 0px 0px; }
+          
+  .dash-consultations .next-consultation .consultation-details .consultation-time {
+          text-align: left;
+          font: normal normal 200 2.5rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+          
+  
+  .dash-consultations .next-consultation .consultation-details .consultation-time sub {
+            font-size: 20%; }
+  
+  .dash-consultations .next-consultation .details-button {
+        margin: 20px 0px;
+      padding: 0px 5px; 
+    color: blue;}
+    
+  .dash-consultations .next-consultation .details-button .btn-primary-details{
+      margin: 20px 0px;
+    padding: 0px 10px; 
+  color: blue;}
+  
+  /*...............next consultation ends.........*/
+    
+  .dash-consultations .upcoming-consultations {
+      height: fit-content;
+      width: 100%;
+      min-width: 220px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 5px;
+      padding: 0px 20px;
+      overflow: hidden;
+      flex-grow: 1;
+    column-gap: 2px; }
+  
+      
+      
+    @media (max-width: 1199.98px) {
+        .dash-consultations .upcoming-consultations {
+          width: 50%;
+          margin: 10px; } }
+  
+  .dash-consultations .upcoming-consultations .detail-titles {
+        margin-top: 10px;
+        padding: 0px; }
+  
+  .dash-consultations .upcoming-consultations .detail-titles .detail-title {
+          text-align: left;
+          font: normal normal bold 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #7F8FA8;
+          text-transform: uppercase;
+          margin: 2px 2px; }
+  
+          /*top part*/
+  .dash-consultations .upcoming-consultations .patient-details {
+        margin: 2px 0px 0px 0px;
+        padding: 0px; }
+  
+  .dash-consultations .upcoming-consultations .patient-details .user-name {
+          text-align: left;
+          font: normal normal 600 1rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+  
+  .dash-consultations .upcoming-consultations .patient-details .detail-text {
+          text-align: left;
+          font: normal normal normal 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+  
+  .dash-consultations .upcoming-consultations .patient-details .detail-symptom {
+          text-align: left;
+          font: normal normal bold 1rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+          
+  .dash-consultations .upcoming-consultations .patient-details .avatar-patient {
+          border-radius: 100%;
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          text-align: center;
+          padding: 0px; }
+  
+  .dash-consultations .upcoming-consultations .patient-details a {
+          color: #0000ac;
+          text-decoration: underline; }
+  
+  .dash-consultations .upcoming-consultations .patient-details a:hover {
+          color: rgba(0, 0, 255, 0.534);
+          text-decoration: underline; }
+  
+  .dash-consultations .upcoming-consultations .view-details-btn {
+        text-align: center; }
+  
+  .consultation-time {
+    text-align: left;
+    font: normal normal 300 2.5rem Source Sans Pro;
+    letter-spacing: 0px;
+    color: #32435E; }
+  .consultation-time sub {
+      font-size: 30%; }
+  
+  /*...........last part............*/
+  .dash-consultations-title-patients {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 30px 0px 0px 0px; }
+    
+  .dash-consultations-title-patients .section-title {
+      text-align: left;
+      font: normal normal bold 1.2rem Source Sans Pro;
+      letter-spacing: 0px;
+      color: #32435E;
+    padding:10px; }
+      
+  .dash-consultations-title-patients .button {
+      text-align: right;
+      padding: 0px;
+      margin: 0px; }
+  /*---------top ends*/
+  
+  /*---------upcoming consultations------*/
+  .ap-consultations {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden; }
+  
+  .ap-consultations .upcoming-consultations {
+      height: fit-content;
+      width: 100%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 5px;
+      padding: 0px 20px;
+      overflow: hidden;
+    margin-left: 10px; }
+  
+  .ap-consultations .upcoming-consultations .detail-titles {
+        margin-top: 10px;
+        padding: 0px; }
+  
+  .ap-consultations .upcoming-consultations .detail-titles .detail-title {
+          text-align: left;
+          font: normal normal bold 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #7F8FA8;
+          text-transform: uppercase;
+          margin: 2px 2px; }
+  
+  .ap-consultations .upcoming-consultations .patient-details {
+        margin: 2px 0px 0px 0px;
+        padding: 0px; }
+  
+  .ap-consultations .upcoming-consultations .patient-details .user-name {
+          text-align: left;
+          font: normal normal 600 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+  
+  .ap-consultations .upcoming-consultations .patient-details .detail-text {
+          text-align: left;
+          font: normal normal normal 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+  
+  .ap-consultations .upcoming-consultations .patient-details .detail-symptom {
+          text-align: left;
+          font: normal normal bold 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #32435E; }
+  
+  .ap-consultations .upcoming-consultations .patient-details .avatar-patient {
+          border-radius: 100%;
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          text-align: center;
+          padding: 0px; }
+        .ap-consultations .upcoming-consultations .patient-details a {
+          color: #0000ac;
+          text-decoration: underline; }
+        .ap-consultations .upcoming-consultations .patient-details a:hover {
+          color: rgba(0, 0, 255, 0.534);
+          text-decoration: underline; }
+      .ap-consultations .upcoming-consultations .view-details-btn {
+        text-align: center; }
+
+
+
+    .ap-consultations .upcoming-consultations .detail-titles {
+      margin-top: 10px;
+      padding: 0px; }
+      .ap-consultations .upcoming-consultations .detail-titles .detail-title {
+        text-align: left;
+        font: normal normal bold 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #7F8FA8;
+        text-transform: uppercase;
+        margin: 2px 2px; }
+    .ap-consultations .upcoming-consultations .patient-details {
+      margin: 2px 0px 0px 0px;
+      padding: 0px; }
+      .ap-consultations .upcoming-consultations .patient-details .user-name {
+        text-align: left;
+        font: normal normal 600 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #32435E; }
+      .ap-consultations .upcoming-consultations .patient-details .detail-text {
+        text-align: left;
+        font: normal normal normal 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #32435E; }
+      .ap-consultations .upcoming-consultations .patient-details .detail-symptom {
+        text-align: left;
+        font: normal normal bold 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #32435E; }
+      .ap-consultations .upcoming-consultations .patient-details .avatar-patient {
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        text-align: center;
+        padding: 0px; }
+      .ap-consultations .upcoming-consultations .patient-details a {
+        color: #0000ac;
+        text-decoration: underline; }
+      .ap-consultations .upcoming-consultations .patient-details a:hover {
+        color: rgba(0, 0, 255, 0.534);
+        text-decoration: underline; }
+    .ap-consultations .upcoming-consultations .view-details-btn {
+      text-align: center; }
+  
+  
+  .file-data-light {
+    text-align: left;
+    font: normal normal bold 1rem Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin: 2px 2px; }
+  
+  .join-call {
+    width: 190px;
+    height: 116px;
+    background: #1FB28F 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 20px;
+   
+   }
+    
+  .join-call .pa-call-button {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 130px;
+      height: 40px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #1FB28F;
+      border-radius: 20px;
+      padding: 5px 0px;
+      margin: 10px; }
+  
+  .join-call .pa-call-button .call-btn-text {
+        text-align: left;
+        font: normal normal bold 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #1FB28F;
+        padding: 5px 0px;
+        margin: 0px; }
+  
+  .join-call .pa-call-button .call-icon {
+        font-size: 1.3em;
+        width: 20px;
+        height: 20px;
+        margin: 5px 15px 20px;
+        color: #1FB28F; }
+  
+.patient-profile2 {
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+          box-shadow: 0px 1px 3px #00000029;
+          border-radius: 5px;
+          padding: 20px;
+          margin: 0px 5px 5px;
+        width: 280px;
+      margin-bottom: 10px;
+      margin-top: 80px; }
+
+  .history-questionnaire {
+    padding: 0px 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 5px;
+    margin: 0px 0px;
+    margin-top:10px;
+    margin-left:5px ;
+
+  margin-bottom: 50px;
+ 
+   }
+    
+  .history-questionnaire .questionnaire {
+      display: flex;
+      flex-flow: row wrap;
+      background: #32435E 0% 0% no-repeat padding-box;
+      border-radius: 5px 5px 0px 0px;
+      height: 155px;
+      width: 100%;
+      padding: 20px;
+      margin: 0px; }
+     
+  .history-questionnaire .questionnaire .icon-questionnaire {
+        font-size: 0.5em;
+        color: #ffffff;
+        width: 100px;
+        height: 100px;
+        background: #ED3B5D 0% 0% no-repeat padding-box;
+        border-radius: 100px;
+        padding: 0px;
+        text-align: center;
+       }
+       
+  .history-questionnaire .questionnaire .icon-questionnaire .iconSymptom {
+          width: 50px;
+          height: 60px;
+          margin: 15px; }
+         
+  .history-questionnaire .questionnaire .symptom-details {
+        padding-top: 30px;
+      }
+       
+  .history-questionnaire .symptom-details {
+      padding: 10px 20px;
+      margin: 0px 0px; }
+    
+  .history-questionnaire .symptom-details .file-data {
+        margin-top: 5px;
+      margin-left: 5px; }
+        
+  .history-questionnaire .symptom-details .detail-title {
+        margin-bottom: 10px; }
+        
+  .history-questionnaire .symptom-details .comment-data {
+        font: normal normal normal 1rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #32435E;
+        margin-bottom: 40px;
+      margin-left: 5px; }
+  /*----------------top part appointment-----*/
+  .ap-next-consultation {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    min-width: 650px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 0px;
+   margin-left: 20px;
+   object-fit: contain; }
+  
+  .ap-next-consultation .ap-card {
+      min-width: 300px; }
+      
+      @media (max-width: 992px) {
+        .ap-next-consultation .ap-card {
+          border: none; } }
+          
+  .ap-next-consultation .consultation-time {
+      text-align: left;
+      font: normal normal 300 36px/32px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #32435E;
+     }
+      
+  .ap-next-consultation .consultation-time sub {
+        font-size: 30%;
+       }
+        
+  .ap-next-consultation .patient-profile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100px;
+      height: 100px;
+      padding: 0px 0px 0px 0px;
+      margin: 0px;
+      margin-bottom: 20px;
+      align-items: center;
+      color: #32435E; }
+      
+  .ap-next-consultation .patient-profile .user-details {
+        width: 200px;
+        margin-top: 40px;
+
+       }
+        
+  .ap-next-consultation .patient-profile .user-details #user-profile-img {
+          width: 53px;
+          height: 53px;
+          border: 1px solid azure;
+          border-radius: 100%; }
+  
+  .ap-next-consultation .patient-profile .user-details .user-name {
+          font: normal normal bold 1rem Source Sans Pro, San Serif;
+          width: 200px;
+          color: #32435E; }
+        
+  .detail-title {
+            text-align: left;
+            font: normal normal bold 0.6rem Source Sans Pro;
+            letter-spacing: 0px;
+            color: #7F8FA8;
+            text-transform: uppercase;
+            margin: 2px 2px;
+          margin-top: 10px;
+         margin: 5px;
+         
+        }
+       
+  .file-data {
+    text-align: left;
+    font: normal normal bold 1rem Source Sans Pro;
+    letter-spacing: 0px;
+    color: #32435E;
+    margin: 5px;
+
+    }
+      
+  
+  .ap-next-consultation .ap-join-call {
+      width: 350px;
+      height: 130px;
+      border-radius: 5px;
+      padding-left: 0px;
+      text-align: center;
+    margin-right:60px;  }
+      
+  .ap-next-consultation .ap-join-call .pa-call-button {
+        width: 140px;
+        height: 45px;
+        background: #1FB28F 0% 0% no-repeat padding-box;
+        border: 1px solid #1FB28F;
+        border-radius: 20px;
+        padding: 10px 10px;
+       margin: 25px auto 0px auto;
+       text-align: left;
+     }
+       
+  .ap-next-consultation .ap-join-call .pa-call-button .call-btn-text {
+         text-align: right;
+          font: normal normal bold 0.8rem Source Sans Pro;
+          letter-spacing: 0px;
+          color: #000;
+          padding: 5px 0px;
+          margin-top: 0px; }
+  
+        
+  .ap-next-consultation .ap-join-call .pa-call-button .call-btn {
+          transform: rotate(225deg);
+          -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+          -moz-transform: rotate(225deg);
+          width: 10px;
+          height: 10px;
+          margin: 5px; }
+  
+  .toggle {
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 3%; }
+  
+  .toggle .toggle-page {
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-align: center; }
+  
+  .toggle .toggle-page:hover {
+      background-color: #005DDD;
+      color: #ffffff; }
+  
+  .toggle .toggle-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  
+  .call {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    height: fit-content;
+    padding: 0px; }
+  
+  .call .call-card {
+      width: 100%;
+      height: 350px;
+      background: transparent 0% 0% no-repeat padding-box;
+      /*margin: 0px !important;*/
+      padding: 0px;
+      object-fit: cover;
+    margin-top: 80px;
+  }
+  
+  .call .call-card img {
+        width: 100%;
+        margin: 0px;
+        height: inherit;
+        overflow: hidden;
+         }
+  
+  .call .call-card .add-doctor {
+        background-color: #32435E;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: 50px;
+        margin: 0px; }
+  
+  .call .call-card2 {
+      width: 100%;
+      height: 400px;
+      background: transparent 0% 0% no-repeat padding-box;
+      margin: 0px;
+      padding: 0px;
+      object-fit: fill;
+    margin-top: 80px; }
+  
+  .call .call-card2 .call-controls {
+        width: 100%;
+        display: flex;
+        font-size: 0.5em;
+        flex-flow: row nowrap;
+        overflow: hidden;
+        margin-top: -60px;
+        text-align: center;
+        justify-content: center; }
+  
+  .call .call-card2 .call-controls .mute-button {
+          width: 50px;
+          height: 50px;
+          margin: 0px 20px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 0.5;
+          border-radius: 100%;
+          padding: 10px; }
+  
+  .call .call-card2 .call-controls .call-video-off {
+          width: 50px;
+          height: 50px;
+          margin: 0px 20px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 0.5;
+          border-radius: 100%;
+          padding: 10px; }
+  
+  .call .call-card2 .call-controls .end-call-button {
+          width: 50px;
+          height: 50px;
+          margin: 0px 20px;
+          color: white;
+          background-color: #ED3B5D;
+          opacity: 1;
+          border-radius: 100%;
+          padding: 10px;
+          transform: rotate(225deg); }
+  
+  .call .call-card2 .mute-button {
+        width: 50px;
+        height: 50px;
+        margin: 0px 20px;
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 100%; }
+  
+  .call .call-card2 .call-video-off {
+        width: 50px;
+        height: 50px;
+        margin: 0px 20px;
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 100%; }
+  
+  .call .call-card2 .end-call-button {
+        width: 50px;
+        height: 50px;
+        margin: 0px 20px;
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 100%; }
+  
+  .call .call-card2 img {
+        width: 100%;
+        margin: 0px;
+        height: inherit;
+        overflow: hidden; }
+  
+  .call-notes {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    background: transparent; }
+  
+  .call-notes .card {
+      border: none;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 0px 0px 5px 5px; }
+  
+  .call-notes .card-body {
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000029;
+      border-radius: 0px 0px 5px 5px;
+      padding: 50px 20px; }
+  
+  .call-notes .card-header {
+      border-bottom: 5px solid #005DDD;
+      background: none;
+      color: #005DDD;
+      padding: 0px; }
+  
+  .call-notes .card-header .card-header-tabs {
+        border: none;
+        margin: 0px;
+        background-color: none; }
+  
+  .call-notes .card-header .nav-item {
+        border: none;
+        padding: 0;
+        background-color: #ffffff;
+        margin: 0px 5px 0px 0px; }
+  
+  .call-notes .card-header .nav-item .nav-link {
+          padding: 10px 30px;
+          margin: 0px;
+          border: none; }
+  
+  .call-notes .card-header .nav-item .active, .call-notes .card-header .nav-item .nav-link:hover {
+          background-color: #005DDD;
+          color: #ffffff;
+          border: none;
+          font-weight: bold; }
+  
+  
+  .ap-join-call {
+    padding: 20px;
+    margin: 0 auto; }
+  
+  .ap-join-call .pa-call-button {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 130px;
+      height: 40px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 100%;
+      padding: 5px 0px;
+      margin: 10px; }
+  
+  .ap-join-call .pa-call-button .call-btn-text {
+        text-align: left;
+        font: normal normal bold 0.8rem Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffffff;
+        padding: 0px 0px 5px 0px;
+        margin: 0px; }
+  
+  .ap-join-call .pa-call-button .call-icon {
+        font-size: 1.5em;
+        width: 20px;
+        height: 20px;
+        margin: 5px 15px 20px;
+        color: #ffffff; }
+        
+  .patient-profile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 400px;
+    height: 100px;
+    padding: 0px 0px 0px 40px;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #32435E;}
+  
+  .patient-profile .user-details {
+      width: 200px; }
+  
+  .patient-profile .user-details #user-profile-img {
+        width: 53px;
+        height: 53px;
+        border: 1px solid azure;
+        border-radius: 100%;
+      margin-left: 10px; }
+  
+   .patient-profile .user-details .user-name {
+        font: normal normal bold 1rem Source Sans Pro, San Serif;
+        width: 200px;
+        margin: 0px;
+        font-size: 16px;
+        color: #32435E; }
+  
+  .patient-profile .user-details .user-title {
+        font: normal normal normal 0.8rem Source Sans Pro;
+        width: 200px;
+        margin: 0px;
+        color: #7F8FA8; }

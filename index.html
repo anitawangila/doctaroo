@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
+      <link rel="stylesheet" href="css/bootstrap.min.css"/>
+       <link rel="stylesheet" href="style.css">
+        <!----------fonts awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/524828f6ad.js" crossorigin="anonymous"></script>
+        <!------boxicons-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+       
+    </head>
+
+    <body>
+        <header class="I-header">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+                </div>
+    
+                <div>
+                      <img id="doctaroo_logo"
+                        src="assets/logoDoctaroo.svg"
+                        alt="LogoDoctaroo"/>
+                 </div>
+           
+            <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+             <ul class="nav__list">
+                        <div class="row logo-Section">
+                            <div class="col-lg-10 logo-wrapper waves-light waves-effect waves-light">
+                           
+                                <img id="doctaroo_logo"
+                                src="assets/logoDoctaroo.svg"
+                                alt="LogoDoctaroo"/>
+                          
+                            </div>
+                        </div>
+                    <div class="row avatar">
+                        <div class="logo-wrapper waves-light waves-effect waves-light">
+                       
+                            <img id="user-profile-img"
+                            src="assets/doctor.png"
+                            alt="LogoDoctaroo"/>
+                      
+                        </div>
+                    
+                        <div class="user-details">
+                            <p class="user-name">Didier Raoult</p>
+                            <p class="user-title">General Practitioner</p>
+        
+                        </div>
+               
+                     </div>
+                
+                  
+                    <li class="nav__item"><a href="#dashboard" class="nav__link active" ><i class="fa fa-desktop"></i>Dashboard</a></li>
+                    <li class="nav__item"><a href="#appointments" class="nav__link" ><i class="fa fa-calendar"></i>Appointments</a></li>
+                    <li class="nav__item"><a href="#patients" class="nav__link" ><i class="fa fa-user"></i>Patients</a></li>
+                    <li class="nav__item"><a href="#payments" class="nav__link" ><i class="fas fa-money-check"></i>Payments</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    </header>
+   
+
+    <section class="dashboard section" id="dashboard">
+        <div class="main">
+    
+        <div class="row top-stripe">
+            <div class="col-3 stripe-one"></div>
+            <div class="col-3 stripe-two"></div>
+            <div class="col-3 stripe-three"></div>
+            <div class="col-3 stripe-four"></div>
+        </div> 
+    <!--banner section-->
+    <div class="row heading-section bd-grid" >
+        <div class="col-lg-4 col-md-6 col-12 page-heading">
+            <h1 class="page-title">Dashboard</h1><br/>
+            <p class="page-title-next">Welcome Dr. Didier Raoult</p>
+            <p class="page-highlight-text">You have <strong class="highlight-main">2 notifications</strong> in the afternoon.</p>
+
+        </div>
+        <div class="col-lg-8 col-md-6 col-12 banner-wrapper">
+            <div class="row spacer"><br/><br/></div>
+            <div class="row banner-top">
+                <div class="row banner-top-content">
+                    <div class="col-7 text">
+                            <p class="banner-top-main-text">The more you consult, <strong class="span-highlight">the less you pay</strong></p>
+                            <a href="#" class="banner-link">Find out how</a>
+                    </div>
+                    <div class="col-5 banner-imageholder">
+                        <img class="banner" src="assets/PayLess.svg" alt="payless for more"/>
+                    </div>
+                </div>
+            </div>                       
+
+        </div>
+    </div>
+   <!--banner section ends-->
+   <!-- Page content ends -->
+
+<!---
+   --- --Dashboard cards-->
+    <div class="row dash-cards">
+
+        <div class="col-lg-3 col-md-3 col-12 dash-card total-consultations">
+                <div class="row">
+                    <div class="col-4 c-icon">
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+                    <div class="col-8 card-text">
+                        <p class="card-text-one">35</p>
+                        <p class="card-text-two">Total Consultations</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-12 dash-card active-patients">
+            <div class="row">
+                <div class="col-4 c-icon">
+                    <i class="fa fa-user "></i>
+                </div>
+                <div class="col-8 card-text">
+                    <p class="card-text-one">12</p>
+                    <p class="card-text-two">Active  Patients</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 dash-card total-payments">
+            <div class="row">
+                <div class="col-4 c-icon">
+                    <i class="fa fa-credit-card"></i>
+                </div>
+                <div class="col-8 card-text">
+                    <p class="card-text-one">35,000<sup>KES</sup></p>
+                    <p class="card-text-two">Total Payments</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-lg-3 col-md-3 col-12 dash-card average-session">
+            <div class="row">
+                <div class="col-4 c-icon">
+                    <i class="fa fa-clock"></i>
+                </div>
+                <div class="col-8 card-text">
+                    <p class="card-text-one">12<sup>MIN</sup></p>
+                    <p class="card-text-two">Average Session</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  <!--Dashboard cards ends-->
+<!--
+    --Dashboard consultation titles-->
+
+    <div class="row dash-consultations-title">
+        <div class="col-lg-3 col-md-3 col-12">
+            <p class="section-title">Your next consulatation</p>
+        </div>
+       <div class="col-lg-7 col-md-7 col-12">
+            <p class="section-title">Upcoming appointments</p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-12 button">
+            <button type="button" class="btn btn-primary">+ Add new</button>
+        </div>
+    </div>
+
+     <!---next Consultation-->
+
+    <div class="row dash-consultations">
+        <div class="col-lg-3 col-12 next-consultation">
+            <div class="row patient-profile">
+                <div class="col-3 patient">
+                    <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
+                </div>
+                <div class="col-6 user-details">
+                    <p class="user-name">Elisha Sore</p>
+                    <p class="user-title">ONLINE</p>
+                </div>
+                <div class="col-3 call-button">
+                    <button class="btn call-btn">
+                        <i class="fa fa-phone-alt  "></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row consultation-details">
+                <div class="col-6">
+                    <p class="detail-title">TIME OF CALL</p>
+                    <p class="consultation-time">02:45<sub>PM</sub></p>
+                </div>
+                <div class="col-6">
+                    <p class="detail-title">PRIMARY SYMPTOM</p>
+                    <P class="file-data">Allergies</P>                        
+                </div>
+            </div>
+            <hr/>
+            <div class="row details-button">
+                <div class="col-3 spacer"></div>
+                <div class="col-6">
+                    <button type="button"class="btn btn-primary details">View details</button>
+                </div>
+                <div class="col-3 spacer"></div>
+            </div>
+
+        </div>
+
+   <!--upcoming consultation-->
+
+
+
+    <div class="col-lg-9 col-12 upcoming-consultations">
+
+            <div class="row detail-titles">
+                <div class="col-3">
+                    <p class="detail-title">Patient name</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-title">Date
+                    <img src="assets/iconSort.svg" alt="Sort by Date"/></p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-title">TIME
+                    <img src="assets/iconSort.svg" alt="Sort by Time"/></p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-title">symptom</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-title">Status</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <p class="detail-title">...</p>
+                </div> 
+                
+            </div>
+            
+           <!--consultation patients-->
+            <div class="row patient-details">
+                <div class="col-3">
+                    <p class="user-name">
+                        <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">May 24, 2020</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">09:45 AM</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-symptom">Allergies</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-text">New</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <a href="#" class="detail-text">View details</a>
+                </div> 
+            </div>
+            <div class="row patient-details">
+                <div class="col-3">
+                    <p class="user-name">
+                        <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">May 24, 2020</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">09:45 AM</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-symptom">Allergies</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-text">New</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <a href="#" class="detail-text">View details</a>
+                </div> 
+            </div>
+            <div class="row patient-details">
+                <div class="col-3">
+                    <p class="user-name">
+                        <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">May 24, 2020</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">09:45 AM</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-symptom">Allergies</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-text">New</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <a href="#" class="detail-text">View details</a>
+                </div> 
+            </div>
+            <div class="row patient-details">
+                <div class="col-3">
+                    <p class="user-name">
+                        <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">May 24, 2020</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">09:45 AM</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-symptom">Allergies</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-text">New</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <a href="#" class="detail-text">View details</a>
+                </div> 
+            </div>
+            <div class="row patient-details">
+                <div class="col-3">
+                    <p class="user-name">
+                        <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">May 24, 2020</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-text">09:45 AM</p>
+                </div>
+                <div class="col-2">
+                    <p class="detail-symptom">Allergies</p>
+                </div>
+                <div class="col-1">
+                    <p class="detail-text">New</p>
+                </div>
+                <div class="col-2 view-details-btn">
+                    <a href="#" class="detail-text">View details</a>
+                </div> 
+            </div>
+            
+           </div>
+          </div>
+      </div>
+    
+    </section>
+
+
+
+
+
+
+
+
+    <section class="appointments section" id="appointments">
+        <div class="main">
+      <div class="row top-stripe">
+          <div class="col-3 stripe-one"></div>
+          <div class="col-3 stripe-two"></div>
+          <div class="col-3 stripe-three"></div>
+          <div class="col-3 stripe-four"></div>
+      </div>
+      <div class="row heading-section">
+          <div class="col-12 page-heading">
+              <p class="page-title">Appointments</p><br/>
+              <p class="page-title-next">Your next consultation</p>
+              
+          </div>
+          
+      </div>
+      <!--Next Consultation-->
+      <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-12">
+              <div class="row ap-next-consultation">
+                  <div class="col-lg-4 col-md-6 col-12  vl pd ap-card">
+                      <div class="row patient-profile">
+                          <div class="col-4 patient">
+                              <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
+                          </div>
+                          <div class="col-8 user-details ">
+                              <p class="user-name">Elisha Sore</p>
+                              <p class="user-title">ONLINE</p>
+                              <div class="row">
+                                  <div class="col-6">
+                                      <p class="detail-title">Age</p>
+                                      <p class="file-data">35</p>
+                                  </div>
+                                  <div class="col-6">
+                                      <p class="detail-title">Gender</p>
+                                      <P class="file-data">Male</P>                        
+                                  </div>
+                              </div>
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12  vl pd ap-card">
+                      <div class="row consultation-details">
+                          <div class="col-6">
+                              <p class="detail-title">TIME OF CALL</p>
+                              <p class="consultation-time">02:45<sub>PM</sub></p>
+                          </div>
+                          <div class="col-6">
+                              <div class="row">
+                                  <p class="detail-title">PRIMARY SYMPTOM</p>
+                                  <P class="file-data">Allergies</P>  
+                              </div>
+                              <br/>
+                              <div class="row consultation-details">
+                                  <p class="detail-title"> primary physician</p>
+                                  <p class="file-data">Dr. Angela Maurie</p>
+                              </div>                    
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12  pd ap-card">
+                      <div class="row ap-join-call">
+                          <div class="row">
+                              <button class="btn pa-call-button"><i class="call-icon fas fa-phone-alt fa-2x"></i>
+                                  <p class="call-btn-text">Join Call</p></button>
+                              <a href="#" class="detail-text">View details</a>
+                          </div>
+                          
+                          
+                      </div>
+                   
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-0 ap-card"></div>
+      </div>
+      <!--Upcoming Appointments-->
+
+      <div class="row">
+          <div class="row dash-consultations-title">
+              <div class="col-10">
+                  <p class="section-title">Upcoming appointments</p>
+              </div>
+              <div class="col-2 button">
+                  <button type="button" class="btn btn-primary">+ Add new</button>
+              </div>
+          </div>
+          <div class="row ap-consultations">
+              <div class="col-12 upcoming-consultations">
+                  <div class="row detail-titles">
+                      <div class="col-3">
+                          <p class="detail-title">Patient name</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-title">Date
+                          <img src="assets/iconSort.svg" alt="Sort by Date"/></p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-title">TIME
+                          <img src="assets/iconSort.svg" alt="Sort by Time"/></p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-title">symptom</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-title">Status</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <p class="detail-title"></p>
+                      </div> 
+                  </div>
+                  
+                  <!--consultation patients-->
+                  
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row patient-details">
+                      <div class="col-3">
+                          <p class="user-name">
+                              <img class="avatar-patient"src="assets/AvatarPatient.png" alt="Patient"/> Aidebe Solomon</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">May 24, 2020</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-text">09:45 AM</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="detail-symptom">Allergies</p>
+                      </div>
+                      <div class="col-1">
+                          <p class="detail-text">New</p>
+                      </div>
+                      <div class="col-2 view-details-btn">
+                          <a href="#" class="detail-text">View details</a>
+                      </div> 
+                  </div>
+                  <div class="row toggle">
+                      <div class="toggle-p"><img src="assets/iconChevPr.svg" alt="Previous"/></div>
+                      <div class="toggle-page"><p class="page-no">1</p></div>
+                      <div class="toggle-page"><p class="page-no">2</p></div>
+                      <div class="toggle-page"><p class="page-no">3</p></div>
+                      <div class="toggle-page"><p class="page-no">4</p></div>
+                      <div class="toggle-p"><img src="assets/iconCh.svg" alt="Previous"/></div>
+
+                  </div>
+
+                  
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+
+
+<section class="patients" id="patients">
+  <div class="main">
+    <div class="row top-stripe">
+        <div class="col-3 stripe-one"></div>
+        <div class="col-3 stripe-two"></div>
+        <div class="col-3 stripe-three"></div>
+        <div class="col-3 stripe-four"></div>
+    </div>
+    <div class="row heading-section">
+        <div class="col-12 page-heading">
+            <p class="page-title">Patients</p><br/>
+            <p class="page-title-next">Patient Profile</p>
+            
+        </div>
+        
+    </div>
+    <div class="row dash-consultations-title-patients">
+        <div class="col-3">
+            <p class="section-title">Personal details</p>
+        </div>
+        <div class="col-6">
+            <p class="section-title">Questionnaire</p>
+        </div>
+        <div class="col-3 button">
+        
+        </div>
+    </div>
+    <!--Personal Details-->
+    
+    <div class="row dash-consultations">
+        
+        <div class="col-3 next-consultation">
+            <div class="row patient-profile">
+                <div class="col-3 patient">
+                    <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
+                </div>
+                <div class="col-6 user-details">
+                    <p class="user-name">Elisha Sore</p>
+                    <p class="user-title">ONLINE</p>
+                </div>
+                <div class="col-3">
+                    
+                </div>
+            </div>
+            <hr/>
+            <div class="row consultation-details">
+                <div class="col-4">
+                    <p class="detail-title">Age</p>
+                    <p class="file-data">35</p>
+                </div>
+                <div class="col-4">
+                    <p class="detail-title">Gender</p>
+                    <P class="file-data">Male</P>                        
+                </div>
+                <div class="col-4">
+                    <p class="detail-title">insurance</p>
+                    <P class="file-data">yes</P>                        
+                </div>
+            </div>
+            <hr/>
+            <div class="row consultation-details">
+                <p class="detail-title"> primary physician</p>
+                <p class="file-data">Dr. Angela Maurie</p>
+            </div>
+      </div>
+      
+    
+   
+      
+
+        <!-- Questionnaire-->
+
+        <div class="col-6 history">
+            <div class="history-questionnaire">
+                <div class="row questionnaire">
+                    <div class="col-3">
+                        <div class="icon-questionnaire">
+                            <i class="fa fa-file-medical-alt fa-7x"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-9 symptom-details">
+                        <p class="detail-title">Primary Symptom</p>
+                        <p class="file-data-light">Allergies</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 symptom-details vl">
+                        <p class="detail-title">Duration of Symptoms</p>
+                        <p class="file-data">2 Weeks</p>
+                    </div>
+                    
+                    <div class="col-6 symptom-details">
+                        <p class="detail-title">Previous Consultation</p>
+                        <p class="file-data">Yes</p>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-6 symptom-details vl">
+                        <p class="detail-title">Pain Levels</p>
+                        <p class="file-data">0</p>
+                    </div>
+                    <div class="col-6 symptom-details">
+                        <p class="detail-title">Fever Or Temperature</p>
+                        <p class="file-data">38<sup>o</sup></p>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-6 symptom-details vl">
+                        <p class="detail-title">Medication</p>
+                        <p class="file-data">Paracetamol</p>
+                    </div>
+                    <div class="col-6 symptom-details">
+                        <p class="detail-title">known conditions</p>
+                        <p class="file-data">Lactose Intolerant</p>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-12 symptom-details">
+                        <p class="detail-title">Additional Information</p>
+                        <p class="comment-data">I have had a persistent cough with the sneezing and it seems to be getting worse every day.</p>
+                    </div>
+                </div>
+            </div>
+        <!--Join Call-->
+        <div class="col-3">
+            <div class="row join-call">
+                <p class="file-data-light">Elisha is Online now</p>
+                <div class="row">
+                    <button class="btn pa-call-button"><i class="call-icon fa fa-phone-alt fa-2x"></i><p class="call-btn-text">Join Call</p></button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="payments" id="payments">
+    <div class="main">
+        <div class="row top-stripe">
+            <div class="col-3 stripe-one"></div>
+            <div class="col-3 stripe-two"></div>
+            <div class="col-3 stripe-three"></div>
+            <div class="col-3 stripe-four"></div>
+        </div>
+        <div class="row heading-section">
+            <div class="col-lg-12 col-md-9 col-sm-3 page-heading">
+                <p class="page-title">Appointments</p><br/>
+                <p class="page-title-next">Video Call</p><br/>
+                <p class="file-data">Call in Progress</p>
+                
+            </div>
+            <div class="col-lg-0 col-md-3 col-sm-9"></div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                
+                <div class="row">
+                    <!-- Questionnaire-->
+            <div class="col-12 history">
+                <div class="row patient-profile2">
+                    <div class="col-lg-6 col-md-6 col-12 vl">
+                        <p class="detail-title">You are consulting with</p>
+                        <p class="file-data">Elisha Sore</p>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <p class="detail-title">Time left</p>
+                        <p class="consultation-time">03:17s</p>
+                    </div>
+                </div>
+                <div class="history-questionnaire">
+                    <div class="row questionnaire">
+                        <div class="col-3">
+                            <div class="icon-questionnaire">
+                                <i class="fa fa-file-medical-alt fa-7x"></i>
+                            </div>
+
+                        </div>
+                        <div class="col-9 symptom-details">
+                            <p class="detail-title">Primary Symptom</p>
+                            <p class="file-data-light">Allergies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-6 symptom-details vl">
+                            <p class="detail-title">Duration of Symptoms</p>
+                            <p class="file-data">2 Weeks</p>
+                        </div>
+                        
+                        <div class="col-6 symptom-details">
+                            <p class="detail-title">Previous Consultation</p>
+                            <p class="file-data">Yes</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-6 symptom-details vl">
+                            <p class="detail-title">Pain Levels</p>
+                            <p class="file-data">0</p>
+                        </div>
+                        <div class="col-6 symptom-details">
+                            <p class="detail-title">Fever Or Temperature</p>
+                            <p class="file-data">38<sup>o</sup></p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-6 symptom-details vl">
+                            <p class="detail-title">Medication</p>
+                            <p class="file-data">Paracetamol</p>
+                        </div>
+                        <div class="col-6 symptom-details">
+                            <p class="detail-title">Known conditions</p>
+                            <p class="file-data">Lactose Intolerant</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-12 symptom-details">
+                            <p class="detail-title">Additional Information</p>
+                            <p class="comment-data">I have had a persistent cough with the sneezing and it seems to be getting worse every day.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-12 no-padding">
+                <div class="row call">
+                    <div class="col-lg-6 col-md-6 col-12 no-padding">
+                        <div class="call-card">
+                            <img src="assets/2856791.png" alt="doctor on call"/>
+                            <div class="add-doctor">
+                                <p class="file-data-light">Room #2345</p>
+                                <button type="button" class="btn btn-primary">+ Add doctor</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-12 no-padding">
+                        <div class="call-card2">
+                            <img src="assets/2856791.png" alt="doctor on call">
+                            <div class="call-controls">
+                                <button class="btn mute-button">
+                                    <i class="fa fa-microphone-slash fa-3x"></i>
+                                </button>
+                                <button class="btn end-call-button">
+                                    <i class="fa fa-phone fa-4x fa-rotate-225"></i>
+                                </button>
+                                <button class="btn call-video-off">
+                                    <i class="fa fa-video-slash fa-3x"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-padding">
+                    <div class="card text-center call-notes no-padding">
+                        <div class="card-header">
+                          <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Notes</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Attachments</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Payments</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="card-body">
+                          <div class="comment-section">
+                              <form>
+                                <textarea class="form-control" placeholder="Call notes" rows="5"></textarea>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+    </body>
+    </html>
