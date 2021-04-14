@@ -68,7 +68,7 @@ hr {
   }
   
   
-  .bd-grid{
+.bd-grid{
       max-width: 1024px;
       display: grid;
       grid-template-columns: 100%;
@@ -78,13 +78,13 @@ hr {
       margin-right: var(--mb-2);
       margin-bottom: var(--mb-4);
   }
-  i{
+i{
       margin-right: 20px;
       margin-left: 0;
       color: #32435E;
       
   }
-  .I-header{
+.I-header{
       width: 100%;
       position:fixed;
       left: 0;
@@ -93,14 +93,14 @@ hr {
       z-index: var(--z-fixed);
       background-color: var(--first-color-lighten-green);
   }
-  .nav{
+.nav{
       height: 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
   }
   
-  .nav__menu{
+.nav__menu{
       position: fixed;
       top: 0px;
       left:-100%;
@@ -112,24 +112,24 @@ hr {
       transition: .5s;
       background-color:#fff;
   }
-  .active {
+.active {
   
     color: #005DDD; 
     }
   
-  a {
+a {
     color: #32435E;
     text-decoration: none;
    }
   
-  .nav__link:hover {
+.nav__link:hover {
   
     color: green; 
   
   }
   
   
-  .nav__close{
+.nav__close{
       position: absolute;
       top: 1rem;
       right: 1rem;
@@ -137,22 +137,22 @@ hr {
       color: var(--first-color-dark);
       cursor: pointer;
   }
-  .nav__item{
+.nav__item{
       margin-bottom: var(--mb-1);
       margin-left: 30px;
       margin-top: 50px;
   }
-  .nav__list{
+.nav__list{
     margin-left: 0px;
   }
-  .nav__link{
+.nav__link{
       font-size: 1rem;
       font-weight: var(--font-bold);
       color: blue;
      transition: .2s;  
   }
   
-  .logo-Section {
+.logo-Section {
    width: 150%;
     height: 100px;
     margin: 0px;
@@ -164,15 +164,15 @@ hr {
     align-content: middle;
      }
   
-  .logo-wrapper {
+.logo-wrapper {
     margin: 0px;
     width: fit-content;
     height: fit-content; }
   
-  .logo-wrapper #doctaroo_logo {
-      width: 170px; }
+.logo-wrapper #doctaroo_logo {
+      width: 160px; }
   
-  .avatar {
+.avatar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -184,35 +184,35 @@ hr {
     align-items: left;
     color: #32435E; }
   
-  .user-details {
+.user-details {
       width: 200px; }
   
-  .avatar.user-details #user-profile-img {
+.avatar.user-details #user-profile-img {
         width: 63px;
         height: 63px;
         border: 1px solid azure;
         border-radius: 100%;
       margin-left: 0px; }
   
-  .user-details .user-name {
+.user-details .user-name {
         font: normal normal bold 3rem Source Sans Pro, San Serif;
         width: 200px;
         margin: 0px;
         font-size: 16px;
         color: #32435E; }
   
-  .user-details .user-title {
+.user-details .user-title {
         font: normal normal normal 0.8rem Source Sans Pro;
         width: 200px;
         margin: 0px;
         color: #7F8FA8; }
   
-  .nav__toggle{
+.nav__toggle{
       color: var(--first-color-dark);
       font-size: 1.3rem;
       cursor: pointer;
   }
-  .show{
+.show{
       left: 0;
   }
   
@@ -220,17 +220,17 @@ hr {
       .nav__menu{
           width: 324px;
       }
-     .heading-section .banner-wrapper .banner-top-content .banner-imageholder {
+.heading-section .banner-wrapper .banner-top-content .banner-imageholder {
       margin-top: -50px;
       width: 200px;
       margin-right: 10px; 
       position:relative;
       /*align-self: flex-end;*/
       margin-bottom: 0px;
-text-align: center;
+      text-align: center;
 
      }
-     .heading-section .banner-wrapper {
+.heading-section .banner-wrapper {
        width: 50%; }
       }
   
@@ -283,30 +283,30 @@ text-align: center;
     padding: 0px 10px;
     margin:0px; }
   
-  .heading-section .page-heading {
+.heading-section .page-heading {
       color: #32435E;
       letter-spacing: 0px;
       min-width: fit-content; }
   
-  .heading-section .page-heading .page-title {
+.heading-section .page-heading .page-title {
         padding-top: 40px;
         font: normal normal 200 2.5rem Source Sans Pro;
         margin-bottom: 10px; 
      }
   
-  .heading-section .page-heading .page-title-next {
+.heading-section .page-heading .page-title-next {
         font: normal normal bold 2.0rem Source Sans Pro;
         margin-bottom: 5px;
         
       }
   
-  .heading-section .page-heading .page-highlight-text {
+.heading-section .page-heading .page-highlight-text {
         font: normal normal normal 1rem Source Sans Pro; }
   
-  .heading-section .banner-wrapper {
+.heading-section .banner-wrapper {
       width: 50%; }
   
-  .heading-section .banner-wrapper .banner-top-content {
+.heading-section .banner-wrapper .banner-top-content {
         background: transparent linear-gradient(282deg, #3497FD 0%, #3ACCE1 100%) 0% 0% no-repeat padding-box;
         border-radius: 5px;
         padding: 5px 0px 0px 10px;
@@ -320,21 +320,21 @@ text-align: center;
         margin-bottom: 10px;
    }
   
-   .heading-section .banner-wrapper .banner-top-content .text {
+  .heading-section .banner-wrapper .banner-top-content .text {
           padding: 10px;
           margin: 0px 10px;
           color: #ffffff;
           padding: 30px 0px; }
   
-   .heading-section .banner-wrapper .banner-top-content .banner-top-main-text {
+  .heading-section .banner-wrapper .banner-top-content .banner-top-main-text {
           font: normal normal normal 0.9rem Source Sans Pro; }
   
-   .heading-section .banner-wrapper .banner-top-content .banner-link {
+  .heading-section .banner-wrapper .banner-top-content .banner-link {
           font: normal normal bold 1rem Source Sans Pro;
           letter-spacing: 0px;
           color: #00276B; }
   
-  .heading-section .banner-wrapper .banner-top-content .banner-imageholder {
+.heading-section .banner-wrapper .banner-top-content .banner-imageholder {
           margin-top: -50px;
           width: 200px;
           text-align: center;
@@ -426,7 +426,7 @@ text-align: center;
         margin-right: 20px;
         text-align: center;
        }
-  /*
+  
     .dash-cards .active-patients .c-icon {
       margin: auto 15 auto 15;
       background-color: #5873f941;
@@ -494,78 +494,113 @@ text-align: center;
     display:flex;
     flex-wrap: row wrap;
     justify-content: flex-start;
-    padding: 10  0px;
+    padding: 10 0px;
     overflow: hidden;
     margin: 0px;
+    
   }
     
   .dash-consultations .next-consultation {
       height: 345px;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       box-shadow: 0px 1px 3px #00000029;
-      border-radius: 5px;
-     padding: 0px 10px;
-      width: 23%;
-      min-width: 150px;
-      overflow: hidden; }
+     border-radius: 5px;
+    padding: 0px 10px;
+      width: 100%;
+     min-width: 220px;
+     
+    
+     
+      }
       
       
     
     @media (max-width: 992px) {
         .dash-consultations .next-consultation {
           margin-bottom: 20px; } }
+
+.patient-profile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+    padding: 0px 0px 0px 40px;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #32435E;}
+  
+  .patient-profile .user-details {
+    margin-left: 10px;
+  margin-top: 5px; }
+  
+  .patient-profile .patient {
+        width: 53px;
+        height: 53px;
+        border: 1px solid azure;
+        border-radius: 100%;
+        padding: 0;
+        margin-left: -10px;
+    }
+  
+   .patient-profile .user-details .user-name {
+        font: normal normal bold 1rem Source Sans Pro, San Serif;
+        width: 150px;
+        margin: 0px;
+        font-size: 16px;
+        color: #32435E; }
+  
+  .patient-profile .user-details .user-title {
+        font: normal normal normal 0.8rem Source Sans Pro;
+        width: 200px;
+        margin: 0px;
+        color: #7F8FA8;
+        font-size: 0.6rem;
+        text-transform: uppercase;  }
+
   
   .dash-consultations .next-consultation .patient-profile {
         width: 100%;
-        padding: 20px 0px;
-        margin: 5px 0px;
+        padding: 10px 0px;
+        margin: 10px 0px;
         text-align: left; }
-  
-  .dash-consultations .next-consultation .patient-profile .patient {
-          width: 40px;
-          padding: 0;
-          margin-left: -10px; }
-          
-  .dash-consultations .next-consultation .patient-profile .user-details {
-          width: 50%;
-        margin-left: 20px;
-      margin-top: 5px; }
-  
-  .dash-consultations .next-consultation .patient-profile .user-details .user-title {
-            font-size: 0.6rem;
-            text-transform: uppercase; 
-          }
-            
+        
   .dash-consultations .next-consultation .patient-profile .call-button {
-          width: 40px;
-          height: 40px;
-          background: #1FB28F 0% 0% no-repeat padding-box;
+          width: 60%;
+          height: 60%;
           border-radius: 100%;
-          padding: 2px;
+          background: #1FB28F 0% 0% no-repeat padding-box;
+          padding: 10px;
           display: flex;
           align-items: center;
-          flex-direction: row;
+          flex-direction: column;
           text-align: center;
           margin-top: 5px;
-          color: #fff;
-        margin-right: 20px; }
+         
+       justify-content: center;
+        }
+       
+
     
   .dash-consultations .next-consultation .patient-profile .call-button .call-btn {
-            font-size: 1rem;
-            color: inherint; }
-            
+            font-size: 1.5rem;
+            align-items: center;
+            color: white; 
+          margin-left: 20px;}
+       /*...........patient profile.....*/    
   .dash-consultations .next-consultation .consultation-details {
-       margin: 5px 0px;
-        padding: 5px 0px; }
+     
+       padding: 3px 0px; }
         
   .dash-consultations .next-consultation .consultation-details .detail-title {
           text-align: left;
-          font: normal normal bold 0.8rem Source Sans Pro;
+          font: normal normal bold 0.5rem Source Sans Pro;
           letter-spacing: 0px;
           color: #7F8FA8;
           text-transform: uppercase;
           margin: 0px 0px; }
-          
+         
   .dash-consultations .next-consultation .consultation-details .consultation-time {
           text-align: left;
           font: normal normal 200 2.5rem Source Sans Pro;
@@ -595,10 +630,14 @@ text-align: center;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       box-shadow: 0px 1px 3px #00000029;
       border-radius: 5px;
-      padding: 0px 20px;
+      padding: 0px 10px;
       overflow: hidden;
       flex-grow: 1;
-    column-gap: 2px; }
+    column-gap: 2px;
+    
+  }
+
+   
   
       
       
@@ -695,7 +734,7 @@ text-align: center;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden; }
   
   .ap-consultations .upcoming-consultations {
@@ -704,9 +743,10 @@ text-align: center;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       box-shadow: 0px 1px 3px #00000029;
       border-radius: 5px;
-      padding: 0px 20px;
+     padding: 0px 10px;
       overflow: hidden;
-    margin-left: 10px; }
+      margin-left: 20px;
+     }
   
   .ap-consultations .upcoming-consultations .detail-titles {
         margin-top: 10px;
@@ -721,7 +761,7 @@ text-align: center;
           margin: 2px 2px; }
   
   .ap-consultations .upcoming-consultations .patient-details {
-        margin: 2px 0px 0px 0px;
+       /* margin: 0px 0px 0px 0px;*/
         padding: 0px; }
   
   .ap-consultations .upcoming-consultations .patient-details .user-name {
@@ -746,7 +786,6 @@ text-align: center;
           border-radius: 100%;
           width: 28px;
           height: 28px;
-          margin-right: 10px;
           text-align: center;
           padding: 0px; }
         .ap-consultations .upcoming-consultations .patient-details a {
@@ -760,51 +799,6 @@ text-align: center;
 
 
 
-    .ap-consultations .upcoming-consultations .detail-titles {
-      margin-top: 10px;
-      padding: 0px; }
-      .ap-consultations .upcoming-consultations .detail-titles .detail-title {
-        text-align: left;
-        font: normal normal bold 0.8rem Source Sans Pro;
-        letter-spacing: 0px;
-        color: #7F8FA8;
-        text-transform: uppercase;
-        margin: 2px 2px; }
-    .ap-consultations .upcoming-consultations .patient-details {
-      margin: 2px 0px 0px 0px;
-      padding: 0px; }
-      .ap-consultations .upcoming-consultations .patient-details .user-name {
-        text-align: left;
-        font: normal normal 600 0.8rem Source Sans Pro;
-        letter-spacing: 0px;
-        color: #32435E; }
-      .ap-consultations .upcoming-consultations .patient-details .detail-text {
-        text-align: left;
-        font: normal normal normal 0.8rem Source Sans Pro;
-        letter-spacing: 0px;
-        color: #32435E; }
-      .ap-consultations .upcoming-consultations .patient-details .detail-symptom {
-        text-align: left;
-        font: normal normal bold 0.8rem Source Sans Pro;
-        letter-spacing: 0px;
-        color: #32435E; }
-      .ap-consultations .upcoming-consultations .patient-details .avatar-patient {
-        border-radius: 100%;
-        width: 28px;
-        height: 28px;
-        margin-right: 10px;
-        text-align: center;
-        padding: 0px; }
-      .ap-consultations .upcoming-consultations .patient-details a {
-        color: #0000ac;
-        text-decoration: underline; }
-      .ap-consultations .upcoming-consultations .patient-details a:hover {
-        color: rgba(0, 0, 255, 0.534);
-        text-decoration: underline; }
-    .ap-consultations .upcoming-consultations .view-details-btn {
-      text-align: center; }
-  
-  
   .file-data-light {
     text-align: left;
     font: normal normal bold 1rem Source Sans Pro;
@@ -814,18 +808,20 @@ text-align: center;
     margin: 2px 2px; }
   
   .join-call {
-    width: 190px;
-    height: 116px;
-    background: #1FB28F 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    padding: 20px;
+   
+   width: 260px;
+   height: 116px;
+   background: #1FB28F 0% 0% no-repeat padding-box;
+   border-radius: 5px;
+   padding: 20px;
+   margin-left: 2px;
    
    }
     
   .join-call .pa-call-button {
       display: flex;
       flex-flow: row nowrap;
-      width: 130px;
+      width: 160px;
       height: 40px;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       border: 1px solid #1FB28F;
@@ -852,23 +848,24 @@ text-align: center;
           background: #FFFFFF 0% 0% no-repeat padding-box;
           box-shadow: 0px 1px 3px #00000029;
           border-radius: 5px;
-          padding: 20px;
+          padding: 10px;
           margin: 0px 5px 5px;
-        width: 280px;
+        width: 100%;
       margin-bottom: 10px;
-      margin-top: 80px; }
+      margin-top: 80px;
+      min-width:250px ;
+    }
 
   .history-questionnaire {
-    padding: 0px 0px;
+   
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 3px #00000029;
     border-radius: 5px;
-    margin: 0px 0px;
     margin-top:10px;
-    margin-left:5px ;
-
-  margin-bottom: 50px;
- 
+  margin-bottom: 10px;
+  min-width: 250px;
+  width: 100%;
+  
    }
     
   .history-questionnaire .questionnaire {
@@ -876,34 +873,36 @@ text-align: center;
       flex-flow: row wrap;
       background: #32435E 0% 0% no-repeat padding-box;
       border-radius: 5px 5px 0px 0px;
-      height: 155px;
+      height: 150px;
       width: 100%;
-      padding: 20px;
+      padding: 25px;
       margin: 0px; }
+
      
   .history-questionnaire .questionnaire .icon-questionnaire {
         font-size: 0.5em;
         color: #ffffff;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         background: #ED3B5D 0% 0% no-repeat padding-box;
         border-radius: 100px;
-        padding: 0px;
+        padding: 15px;
         text-align: center;
        }
-       
+      
   .history-questionnaire .questionnaire .icon-questionnaire .iconSymptom {
           width: 50px;
           height: 60px;
-          margin: 15px; }
+          margin: 5px; }
          
   .history-questionnaire .questionnaire .symptom-details {
         padding-top: 30px;
+        
       }
-       
+      
   .history-questionnaire .symptom-details {
-      padding: 10px 20px;
-      margin: 0px 0px; }
+      padding: 10px 50px;
+      }
     
   .history-questionnaire .symptom-details .file-data {
         margin-top: 5px;
@@ -923,25 +922,29 @@ text-align: center;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
-    min-width: 650px;
+   width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
-    padding: 0px;
-   margin-left: 20px;
-   object-fit: contain; }
+    min-width: 300px;
+   margin-left: 0px;
+  object-fit: contain; }
+
+    
   
   .ap-next-consultation .ap-card {
-      min-width: 300px; }
-      
+      min-width: 280px;
+    }
+    
       @media (max-width: 992px) {
         .ap-next-consultation .ap-card {
           border: none; } }
           
   .ap-next-consultation .consultation-time {
       text-align: left;
-      font: normal normal 300 36px/32px Source Sans Pro;
+      font: normal normal 300 26px/32px Source Sans Pro;
       letter-spacing: 0px;
       color: #32435E;
+      padding-left: 5px;
      }
       
   .ap-next-consultation .consultation-time sub {
@@ -953,52 +956,53 @@ text-align: center;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
-      width: 100px;
+      width: 300px;
       height: 100px;
       padding: 0px 0px 0px 0px;
       margin: 0px;
       margin-bottom: 20px;
       align-items: center;
       color: #32435E; }
+        
       
   .ap-next-consultation .patient-profile .user-details {
-        width: 200px;
-        margin-top: 40px;
+        width: 150px;
+        padding-top: 20px;
+        
+       
 
        }
-        
-  .ap-next-consultation .patient-profile .user-details #user-profile-img {
-          width: 53px;
-          height: 53px;
-          border: 1px solid azure;
-          border-radius: 100%; }
-  
-  .ap-next-consultation .patient-profile .user-details .user-name {
+       
+.ap-next-consultation .patient-profile .user-details #user-profile-img {
+            width: 53px;
+            height: 53px;
+            border: 1px solid azure;
+            border-radius: 100%; }
+
+.ap-next-consultation .patient-profile .user-details .user-name {
           font: normal normal bold 1rem Source Sans Pro, San Serif;
-          width: 200px;
-          color: #32435E; }
-        
-  .detail-title {
+         color: #32435E; }
+       
+.detail-title {
             text-align: left;
             font: normal normal bold 0.6rem Source Sans Pro;
             letter-spacing: 0px;
-            color: #7F8FA8;
+            color: #32435E;
             text-transform: uppercase;
-            margin: 2px 2px;
-          margin-top: 10px;
-         margin: 5px;
+          margin: 2px 2px;
+        padding-top: 20px;
+        
          
         }
-       
+      
   .file-data {
     text-align: left;
     font: normal normal bold 1rem Source Sans Pro;
     letter-spacing: 0px;
     color: #32435E;
-    margin: 5px;
-
-    }
-      
+    margin: 0px;
+  
+    } 
   
   .ap-next-consultation .ap-join-call {
       width: 350px;
@@ -1212,7 +1216,7 @@ text-align: center;
         margin: 0px 5px 0px 0px; }
   
   .call-notes .card-header .nav-item .nav-link {
-          padding: 10px 30px;
+          padding: 10px 10px;
           margin: 0px;
           border: none; }
   
@@ -1252,37 +1256,4 @@ text-align: center;
         margin: 5px 15px 20px;
         color: #ffffff; }
         
-  .patient-profile {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    width: 400px;
-    height: 100px;
-    padding: 0px 0px 0px 40px;
-    margin: 0px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #32435E;}
-  
-  .patient-profile .user-details {
-      width: 200px; }
-  
-  .patient-profile .user-details #user-profile-img {
-        width: 53px;
-        height: 53px;
-        border: 1px solid azure;
-        border-radius: 100%;
-      margin-left: 10px; }
-  
-   .patient-profile .user-details .user-name {
-        font: normal normal bold 1rem Source Sans Pro, San Serif;
-        width: 200px;
-        margin: 0px;
-        font-size: 16px;
-        color: #32435E; }
-  
-  .patient-profile .user-details .user-title {
-        font: normal normal normal 0.8rem Source Sans Pro;
-        width: 200px;
-        margin: 0px;
-        color: #7F8FA8; }
+ 

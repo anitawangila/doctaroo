@@ -132,7 +132,7 @@
                 </div>
                 <div class="col-8 card-text">
                     <p class="card-text-one">12</p>
-                    <p class="card-text-two">Active  Patients</p>
+                    <p class="card-text-two">Active Patients</p>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                     <i class="fa fa-clock"></i>
                 </div>
                 <div class="col-8 card-text">
-                    <p class="card-text-one">12<sup>MIN</sup></p>
+                    <p class="card-text-one">12<sub>MIN</sub></p>
                     <p class="card-text-two">Average Session</p>
                 </div>
             </div>
@@ -167,14 +167,14 @@
 
     <div class="row dash-consultations-title">
         <div class="col-lg-3 col-md-3 col-12">
-            <p class="section-title">Your next consulatation</p>
+            <p class="section-title">Your next consultation</p>
         </div>
        <div class="col-lg-7 col-md-7 col-12">
             <p class="section-title">Upcoming appointments</p>
-        </div>
+        </div><!----
         <div class="col-lg-2 col-md-2 col-12 button">
             <button type="button" class="btn btn-primary">+ Add new</button>
-        </div>
+        </div>-->
     </div>
 
      <!---next Consultation-->
@@ -183,7 +183,7 @@
         <div class="col-lg-3 col-12 next-consultation">
             <div class="row patient-profile">
                 <div class="col-3 patient">
-                    <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
+                    <img src="assets/AvatarDoctor.png" alt="Avatar Doctor" id="user-profile-img"/>
                 </div>
                 <div class="col-6 user-details">
                     <p class="user-name">Elisha Sore</p>
@@ -422,7 +422,7 @@
                               </div>
                               <br/>
                               <div class="row consultation-details">
-                                  <p class="detail-title"> primary physician</p>
+                                  <p class="detail-title"> PRIMARY PHYSICIAN</p>
                                   <p class="file-data">Dr. Angela Maurie</p>
                               </div>                    
                           </div>
@@ -433,8 +433,9 @@
                       <div class="row ap-join-call">
                           <div class="row">
                               <button class="btn pa-call-button"><i class="call-icon fas fa-phone-alt fa-2x"></i>
-                                  <p class="call-btn-text">Join Call</p></button>
-                              <a href="#" class="detail-text">View details</a>
+                                <p class="call-btn-text">Join Call</p></button>
+                                 <a href="#" class="detail-text">View details</a>
+                              
                           </div>
                           
                           
@@ -742,50 +743,48 @@
     </div>
     <!--Personal Details-->
     
-    <div class="row dash-consultations">
-        
-        <div class="col-3 next-consultation">
-            <div class="row patient-profile">
-                <div class="col-3 patient">
-                    <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
-                </div>
-                <div class="col-6 user-details">
-                    <p class="user-name">Elisha Sore</p>
-                    <p class="user-title">ONLINE</p>
-                </div>
-                <div class="col-3">
-                    
-                </div>
-            </div>
-            <hr/>
-            <div class="row consultation-details">
-                <div class="col-4">
-                    <p class="detail-title">Age</p>
-                    <p class="file-data">35</p>
-                </div>
-                <div class="col-4">
-                    <p class="detail-title">Gender</p>
-                    <P class="file-data">Male</P>                        
-                </div>
-                <div class="col-4">
-                    <p class="detail-title">insurance</p>
-                    <P class="file-data">yes</P>                        
-                </div>
-            </div>
-            <hr/>
-            <div class="row consultation-details">
-                <p class="detail-title"> primary physician</p>
-                <p class="file-data">Dr. Angela Maurie</p>
-            </div>
-      </div>
-      
+<div class="row dash-consultations">
     
+      <div class="col-3 next-consultation">
+          <div class="row patient-profile">
+             <div class="col-3 patient">
+                <img src="assets/AvatarDoctor.png" alt="Avatar Doctor"/>
+             </div>
+             <div class="col-6 user-details">
+                <p class="user-name">Elisha Sore</p>
+                <p class="user-title">ONLINE</p>
+              </div>
+             <div class="col-3">
+                
+              </div>
+         </div>
+         <hr/>
+         <div class="row consultation-details">
+            <div class="col-4">
+                <p class="detail-title">Age</p>
+                <p class="file-data">35</p>
+            </div>
+            <div class="col-4">
+                <p class="detail-title">Gender</p>
+                <P class="file-data">Male</P>                        
+            </div>
+            <div class="col-4">
+                <p class="detail-title">Insurance</p>
+                <P class="file-data">yes</P>                        
+            </div>
+         </div>
+         <hr/>
+        
+         <div class="row consultation-details">
+            <p class="detail-title"> primary physician</p>
+            <p class="file-data">Dr. Angela Maurie</p>
+         </div>
+        </div>
+        
+    
+   <!-- Questionnaire-->
    
-      
-
-        <!-- Questionnaire-->
-
-        <div class="col-6 history">
+        <div class="col-9 history">
             <div class="history-questionnaire">
                 <div class="row questionnaire">
                     <div class="col-3">
@@ -840,21 +839,23 @@
                         <p class="comment-data">I have had a persistent cough with the sneezing and it seems to be getting worse every day.</p>
                     </div>
                 </div>
+                
             </div>
-        <!--Join Call-->
-        <div class="col-3">
-            <div class="row join-call">
-                <p class="file-data-light">Elisha is Online now</p>
-                <div class="row">
-                    <button class="btn pa-call-button"><i class="call-icon fa fa-phone-alt fa-2x"></i><p class="call-btn-text">Join Call</p></button>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-</div>
+       </div>
+      
+     <div class="col-9">
+        <div class="row join-call">
+         <p class="file-data-light">Elisha is Online now</p>
+         <div class="row">
+             <button class="btn pa-call-button"><i class="call-icon fa fa-phone-alt fa-2x"></i><p class="call-btn-text">Join Call</p></button>
+         </div>
+         </div>
+       
+  </div>
+   </div>
 </div>
 </section>
+
 
 <section class="payments" id="payments">
     <div class="main">
@@ -1008,6 +1009,7 @@
     </div>
     
 </section>
-
+<script src="index.js"></script>
+<script src="js/bootstrap.min.js"></script>
     </body>
     </html>
